@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    background: whitesmoke url(imagens/imagem.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center
+}
+
+main{
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 0.693);
+    border-radius: 5px;
+    padding: 25px
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center
+}
+
+div{
+    overflow: hidden;
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(68, 147, 199, 0.875)
+}
+
+img{
+    width: 100%;
+    height: 100%
+}
+
+#im1{
+    transition: scale 1000ms steps(5)
+}
+
+#im2{
+    transition: scale 1000ms linear
+}
+
+#im3{
+    transition: scale 1000ms ease-in
+}
+
+div:hover #im1{
+    scale: 170%
+}
+
+div:hover #im2{
+    scale: 170%
+}
+
+div:hover #im3{
+    scale: 170%
+}

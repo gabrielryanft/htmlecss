@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+    overflow-x: hidden
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(100, 9, 9);
+    border-bottom: 1px solid;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 80px
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    margin: auto
+}
+
+div{
+    height: 150px; width: 150px;
+    background-color: rgb(100, 9, 9);
+    margin: 10px;
+    transition: .2s
+}
+
+main:hover > :not(:hover){
+    opacity: 0.5;
+}

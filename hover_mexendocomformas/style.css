@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* estilo */
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background:rgb(21, 21, 21) url(imagens/imagem.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    overflow-x:hidden
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 663px;
+    margin: auto;
+}
+
+header{
+    width: 100vw;
+    padding: 20px;
+    background-color: rgba(22, 20, 20, 0.808);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+    margin-bottom: 20px
+}
+h1, p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    color: transparent;
+    text-shadow: 0px 0px 1px rgba(245, 245, 245, 0.618)
+}
+
+div{
+    margin: center;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: rgba(245, 245, 245, 0.459);
+    backdrop-filter: blur(1px);
+    border-left: 1px solid white;
+    border-top: 1px solid  white;
+    border-radius: 5px;
+    transition: transform 200ms linear;
+}
+
+footer{
+    width: 100vw;
+    padding: 20px;
+    background-color: rgba(22, 20, 20, 0.808);
+    backdrop-filter: blur(4px);
+    border-top: 1px solid rgba(255, 255, 255, 0.568);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* interação */
+
+#d1:hover{
+    transform: scale(2)
+}
+
+#d2:hover{
+    transform: rotate(45deg)
+}
+
+#d3:hover{
+    transform: skew(10deg, 20deg)
+}
+
+#d4:hover{
+    transform: translate(50px, -50px)
+}
+
+#d5:hover{
+    transform: matrix(0.7, -0.2, 0.1, 0.7, 0.2, 0.1)
+}

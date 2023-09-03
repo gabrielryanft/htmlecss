@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+body{
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center; 
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #ccc;
+    border: 2px solid;
+    margin: 20px
+}
+
+#bolha{
+    animation: bordaLoca 5s linear infinite alternate;
+}
+
+@keyframes bordaLoca {
+    0%{
+        border-radius: 70% 70% 80% 70%;
+    }
+    20%{
+        border-radius: 60% 80% 70% 80%;
+    }
+
+    40%{
+        border-radius: 50% 70% 50% 60%;
+    }
+
+    60%{
+        border-radius: 60% 60% 60% 80%;
+    }
+
+    80%{
+        border-radius: 80% 70% 80% 70%;
+    }
+
+    100%{
+        border-radius: 70% 80% 60% 80%;
+    }
+}
+
+#naoBolha{
+    animation: estranho 5s linear infinite alternate;
+}
+
+@keyframes estranho {
+    0%{
+        border-radius: 10%/50%;
+    }
+
+    20%{
+        border-radius: 50%/10%;
+    }
+
+    40%{
+        border-radius: 50%/100%;
+    }
+
+    60%{
+        border-radius: 100%/50%;
+    }
+    
+    80%{
+        border-radius: 20%/60%;
+    }
+}
+
+#soAsPonta{
+    animation: pontas 5s linear infinite alternate;
+}
+
+@keyframes pontas {
+    0%{
+        border-top-left-radius: 90%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+
+    25%{
+         border-top-left-radius: 0%;
+        border-top-right-radius: 90%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius:00%;
+    }
+
+    50%{
+         border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 90%;
+        border-bottom-left-radius: 0%;
+    }
+
+    75%{
+         border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 90%;
+    }
+}
