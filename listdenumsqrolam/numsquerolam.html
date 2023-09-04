@@ -25,17 +25,6 @@
             <div>5</div>
         </nav>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function(){
-            const navegacao = document.querySelectorAll('nav div')
-            const numeros = document.querySelector('#numeros')
-
-            navegacao.forEach(function(link, index) {
-                link.addEventListener('click', function(){
-                    numeros.style.top = '-' + (index * 400) + 'px'
-                })
-            });
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
