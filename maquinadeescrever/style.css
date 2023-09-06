@@ -25,7 +25,7 @@ p{
     overflow: hidden;
     font-weight: bold;
     border-right:4px solid;
-    animation: digitando 3s steps(18), piscando .6s infinite step-end alternate;
+    animation: digitando 3s steps(18) infinite alternate, piscando .6s infinite step-end alternate;
 }
 
 @keyframes digitando{
