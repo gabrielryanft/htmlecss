@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: conic-gradient(from var(--turnCaixa), rgb(35, 16, 16), rgb(19, 24, 45) 50%, rgb(35, 16, 16));
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: rodando 3s linear infinite;
+}
+
+#caixa{
+    display: grid;
+    place-items: center;
+
+    font-size: 10vmin;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    color: rgba(245, 222, 179, 0.022);
+    
+    height: 50vmin; width: 50vmin;
+    --turnCaixa: 0turn;
+    --bordCaixa: 3px;
+    background-image: conic-gradient(from var(--turnCaixa), rgb(16, 27, 14), rgb(31, 14, 27) 50%, rgb(16, 27, 14)), conic-gradient(from var(--turnCaixa),  rgb(38, 255, 0), rgb(255, 0, 195) 50%, rgb(38, 255, 0));
+    background-size: calc(100% - (var(--bordCaixa) * 2)) calc(100% - (var(--bordCaixa) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: rodando 3s linear infinite;
+
+    box-shadow: inset 0px 0px 2vmin 0px wheat ;
+}
+
+@keyframes rodando {
+    to{
+        --turnCaixa: 1turn
+    }
+}
+
+@property --turnCaixa {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
