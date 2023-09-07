@@ -27,11 +27,12 @@ body{
     display: flex;
     position: relative;
     flex-direction: column;
+    top: 0px;
     height: 2000px;
     width: 150px;
     justify-content: space-around;
     margin: auto;
-    transition: 500ms linear;
+    transition: top 500ms linear;
 }
 
 #numeros > div{
@@ -55,13 +56,12 @@ body{
     height: 70px;
     text-align: center;
     cursor: pointer;
-    transition: 200ms linear;
+    transition: box-shadow 100ms ease-in-out;
     border: 1px double black;
     border-radius: 50%;
-    box-shadow: inset 0px 0px 20px 5px black
 }
 
-#comandante > div:hover{
-    box-shadow: inset 0px 0px 30px 5px  black
+#comandante > div:active{
+    box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.5)
 }
 

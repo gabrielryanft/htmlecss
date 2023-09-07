@@ -63,7 +63,7 @@ p{
 
 @media (min-width: 1200px) {
     main{
-        height: 550px
+        min-height: 550px
     }
 }
 

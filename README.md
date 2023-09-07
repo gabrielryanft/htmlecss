@@ -20,3 +20,7 @@
 <a href="https://gabrielryanft.github.io/htmlecss/editandoimagens/editandoimagens.html" target="_blank" rel="next">EditandoImagens</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/canvasqueepaint/canvas.html" target="_blank" rel="next">CanvasQueEPaint</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/borderradiusdiferentecomanimacao/borderradiuscomanimacao.html" target="_blank" rel="next">BorderRadiusDiferenteComAnimacao</a>    
+<a href="https://gabrielryanft.github.io/htmlecss/bordaqroda/borda.html" target="_blank" rel="next">BordaQRoda</a>    
+<a href="https://gabrielryanft.github.io/htmlecss/" target="_blank" rel="next"></a>    
+<a href="https://gabrielryanft.github.io/htmlecss/" target="_blank" rel="next"></a>    
+<a href="https://gabrielryanft.github.io/htmlecss/" target="_blank" rel="next"></a>    
