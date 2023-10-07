@@ -26,3 +26,4 @@
 <a href="https://gabrielryanft.github.io/htmlecss/tirandofundobranco/fundo.html" target="_blank" rel="next">TirandoFundoBranco</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/vidroembacado/viroembacado.html" target="_blank" rel="next">VidroEmbacado</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/lazyloading/lazyloading.html" target="_blank" rel="next">lazyLoading</a>    
+<a href="https://gabrielryanft.github.io/htmlecss/hovercomblocos/hovercomblocos.html" target="_blank" rel="next">hoverComBlocos</a>    
