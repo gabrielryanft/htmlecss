@@ -64,3 +64,7 @@ dialog{
 #modal > h2{
     margin: 10px
 }
+
+#modal::backdrop{
+    background-image: linear-gradient(225deg, rgba(27, 109, 210, 0.7), rgba(255, 99, 71, 0.7));
+}
