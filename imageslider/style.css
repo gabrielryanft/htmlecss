@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+:root{
+    --tamanho_divs: 15rem;
+    --tamanho_texto: 3rem
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+header{
+    height: 6rem;
+    width: 100%;
+    text-align: center
+}
+header > h1{
+    font-size: 2rem;
+    line-height: 6rem
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 6rem);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+#caixas{
+    position: relative;
+    display:flex;
+    height: calc(var(--tamanho_divs) + 2rem);
+    width: calc(var(--tamanho_divs) + 2rem);
+    border: 3px solid;
+    border-radius: 1rem 1rem 0 0;
+    
+    overflow: auto; /* importante para o bagulho de snap*/
+    scroll-snap-type: x mandatory; /* importante para o bagulho de snap*/
+
+    padding: 2rem;
+    gap: .5rem;
+    scroll-padding: 2rem; /* importante para o bagulho de snap*/ /*é o padding que vai ter quando o scroll snap acontecer*/
+
+    justify-content: start;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+#caixas > div{
+    flex: 0 0 100%; /* importante para o bagulho de snap*/ /*0 grow 0 shrink 100% parent width (é o que cada coisa faz.(flex: 0 0 100% )*/
+
+    scroll-snap-align: start;/* importante para o bagulho de snap*/
+
+    height: var(--tamanho_divs);
+    width: var(--tamanho_divs);
+
+    text-align: center;
+    line-height: var(--tamanho_divs);
+
+    background-color: tomato;
+    border-radius: 1rem;
+    
+    font-size: var(--tamanho_texto);
+}
+
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 8rem;
+    position: absolute;
+    bottom: calc((50vh - 6rem) - 7.5rem);
+    right: 50%;
+    transform: translateX(50%);
+    left:auto;
+}
+
+#nav > a{
+    height: 8px;
+    width: 8px;
+    color: transparent;
+    border: 1px solid black;
+    border-radius: 2px
+}
+
+p{
+    display: inline-block;
+    width: 25rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    text-indent: 1rem
+}
+
+footer{
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    line-height: 4rem;
+    color: rgb(0, 81, 255)
+}
+
+footer span{
+    visibility: hidden;
+}
+
+footer:hover span{
+    visibility: visible;
+}
