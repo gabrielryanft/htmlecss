@@ -69,24 +69,24 @@ section > div{
 
 section div:nth-child(1){
     outline: 3px solid rgb(0, 35, 60);
-    outline-offset: 1rem;
+    outline-offset: -1rem;
 }
 
 section div:nth-child(2){
+    outline: 3px solid rgb(0, 35, 60);
+    outline-offset: 1rem;
+}
+
+section div:nth-child(3){
     outline: 3px solid transparent;
     outline-offset: calc((var(--height_botoes) / 2) * -1);
 
     transition: all linear 300ms;
 }
 
-section div:nth-child(2):hover{
+section div:nth-child(3):hover{
     outline: 3px solid rgb(0, 35, 60);
     outline-offset: .5rem;
-}
-
-section div:nth-child(3){
-    outline: 3px solid rgb(0, 35, 60);
-    outline-offset: -1rem;
 }
 
 section div:nth-child(4){
