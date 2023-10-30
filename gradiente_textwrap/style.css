@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+:root{
+    --header_height: 6rem;
+    --footer_height: 4rem;
+    --main_height: calc(100vh - var(--header_height) - var(--footer_height));
+    --width_principais: 100%; /*width do header main e footer*/
+}
+
+/*header*/
+
+header{
+    height: var(--header_height);
+    width: var(--width_principais);
+    display: grid;
+    place-items: middle;
+    text-align: center;
+}
+
+header h1{
+    text-wrap: balance; /*para que o text wrap fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em coma e 3 em baixo*/
+
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+
+    /*gradiente do h1*/
+    display: inline-block; /*para o gradiente ficar no lugar certo*/
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+    -webkit-background-clip: text;/*mesma coisa*/
+    background-clip: text;/*mesma coisa*/
+    -webkit-text-fill-color: transparent;
+}
+
+/*main*/
+
+main{
+    display: flex;
+    
+    min-height: var(--main_height);
+    width: var(--width_principais);
+
+    align-items: center;
+    text-align: center;
+}
+
+main div{
+    text-wrap: balance; /*para que o text wrap fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em coma e 3 em baixo*/
+
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+
+    /*gradiente da div*/
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+    -webkit-background-clip: text;/*mesma coisa*/
+    background-clip: text;/*mesma coisa*/
+    -webkit-text-fill-color: transparent;
+}
+
+/*footer*/
+
+footer{
+    height: var(--footer_height);
+    width: var(--width_principais);
+
+    text-align: center;
+    line-height: var(--footer_height);
+}
+
+footer p{
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    text-wrap: balance;
+    transition: all 400ms linear;
+    font-weight: bold;
+    display: inline-block;
+
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+    -webkit-background-clip: text;/*mesma coisa*/
+    background-clip: text;/*mesma coisa*/
+    -webkit-text-fill-color: transparent;
+}
+
+footer:hover p{
+    letter-spacing: 1rem;
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+}
+
+/*span's*/
+
+span{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h1, div, p{
+    margin: auto 40px
+}
+
+@media (min-width: 1500px) {
+    h1, div, p{
+        margin: auto 100px
+    }
+}
+
+@media (max-width: 600px) {
+    :root{
+        --header_height: calc(6rem * 0.7);
+        --footer_height: calc(4rem * 0.7);
+        --main_height: calc(100vh - var(--header_height) - var(--footer_height));
+        --width_principais: 100%; /*width do header main e footer*/
+    }
+
+    h1, div, p{
+        margin: auto 20px;
+        transform: scale(.7);
+    }
+}
