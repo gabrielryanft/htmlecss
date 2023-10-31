@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0
+}
+
+:root{
+    --header_height: 6rem;
+    --main-height: calc(100vh - var(--header_height) - var(--footer_height));
+    --footer_height: 4rem;
+    --width_principais: 100%; /*width do header, main e do footer*/
+
+    --cor_progress: rgb(0, 99, 165); /*cor da barra de progresso*/
+
+}
+
+/*header*/
+
+header{
+    display: grid;
+    height: var(--header_height);
+    width: var(--width_principais);
+    place-items: center;
+    text-align: center;
+}
+
+header h1{
+    font-size: 1.8rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-wrap: balance;
+}
+
+/*main*/
+
+main{
+    display:flex;
+    min-height:  var(--main-height);
+    width: var(--width_principais);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+main p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    margin: .5rem
+}
+
+progress{
+    border-radius: .5rem;
+    height: 2rem;
+    width: 15rem
+}
+
+progress::-webkit-progress-bar{
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: inset 0 0 .5rem .1rem rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: .2rem;
+}
+
+progress::-webkit-progress-value{
+    background-color: var(--cor_progress);
+    border-radius: .2rem;
+    box-shadow: 0 0 .5rem var(--cor_progress);
+}
+
+/*footer*/
+
+footer{
+    display: grid;
+    height: var(--footer_height);
+    width: var(--width_principais);
+    place-items: center;
+}
+
+footer p{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    padding: .3rem
+}
+
+footer:hover p::after{
+    content: "  Easter egg ruim!!!";
+    color: var(--cor_progress)
+}
