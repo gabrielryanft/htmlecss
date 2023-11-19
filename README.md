@@ -29,6 +29,5 @@
 <a href="https://gabrielryanft.github.io/htmlecss/progress_nativohtml/progress_nativohtml.html" target="_blank" rel="next">Progress_NativoHTML</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/resizebox/resizebox.html" target="_blank" rel="next">ResizeBox</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/retractablemenu/retractablamenu.html" target="_blank" rel="next">RetractableMenu</a>    
-<a href="https://gabrielryanft.github.io/htmlecss/rolagemdositepeloheader/rolagem.html" target="_blank" rel="next">RolagemDoSitePeloHeader</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/tirandofundobranco/fundo.html" target="_blank" rel="next">TirandoFundoBranco</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/vidroembacado/viroembacado.html" target="_blank" rel="next">VidroEmbacado</a>    
