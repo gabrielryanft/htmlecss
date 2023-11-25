@@ -7,59 +7,52 @@
 }
 
 body{
-    height: 100%;
-    width: 100%;
     background:rgb(21, 21, 21) url(imagens/imagem.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     backdrop-filter: blur(2px);
-    overflow-x:hidden
 }
 
 main{
     display: flex;
     justify-content: center;
+    height: calc(100vh - 10rem);
+    width: 70vmin;
     flex-wrap: wrap;
-    width: 663px;
     margin: auto;
 }
 
 header{
-    width: 100vw;
-    padding: 20px;
+    padding: 1rem;
     background-color: rgba(22, 20, 20, 0.808);
     backdrop-filter: blur(4px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.568);
-    margin-bottom: 20px
+    margin-bottom: 1rem
 }
 h1, p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+    margin: 1rem;
     color: transparent;
     text-shadow: 0px 0px 1px rgba(245, 245, 245, 0.618)
 }
 
 div{
-    margin: center;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
+    min-height: 10vmin;
+    min-width: 10vmin;
+    margin: 1rem;
     background-color: rgba(245, 245, 245, 0.459);
     backdrop-filter: blur(1px);
-    border-left: 1px solid white;
-    border-top: 1px solid  white;
-    border-radius: 5px;
+    border-radius: .5rem;
     transition: transform 200ms linear;
 }
 
 footer{
-    width: 100vw;
-    padding: 20px;
+    padding: 1rem;
     background-color: rgba(22, 20, 20, 0.808);
     backdrop-filter: blur(4px);
     border-top: 1px solid rgba(255, 255, 255, 0.568);
-    margin-top: 20px;
+    margin-top: 1rem;
     text-align: center;
 }
 
