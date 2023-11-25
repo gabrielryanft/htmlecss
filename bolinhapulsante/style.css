@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root{
+    --m_height: 1vh;
+    --m_width: 1vh;
+}
+
 body{
     display: flex;
     height: 100vh;
@@ -11,8 +16,10 @@ body{
 }
 
 main{
-    height: 40px;
-    width: 40px;
+    --m_height: 1vh;
+    --m_width: 1vh;
+    height: var(--m_height);
+    width: var(--m_width);
     border-radius: 50%;
     position: relative;
     background-color: rgb(16, 16, 162)
@@ -29,7 +36,7 @@ main::after{
 
 @keyframes pulsar {
     to {
-        transform: scale(15);
+        transform: scale(9);
         opacity: 0;
         border: 0px dashed rgba(16, 16, 162, 0.64);
     }
