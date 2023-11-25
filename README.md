@@ -9,7 +9,6 @@
 <a href="https://gabrielryanft.github.io/htmlecss/bordaqroda/borda.html" target="_blank" rel="next">BordaQRoda</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/borderradiusdiferentecomanimacao/borderradiuscomanimacao.html" target="_blank" rel="next">BorderRadiusDiferenteComAnimacao</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/botaoligadesliga/ligadesliga.html" target="_blank" rel="next">BotaoLigaDesliga</a>    
-<a href="https://gabrielryanft.github.io/htmlecss/editandoimagens/editandoimagens.html" target="_blank" rel="next">EditandoImagens</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/gradiente_textwrap/gradiente_textwrap.html" target="_blank" rel="next">Gradiente_TextWrap</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/galeriadefotos/galeriadefotos.html" target="_blank" rel="next">GaleriaDeFotos</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/hover_mexendocomformas/formas.html" target="_blank" rel="next">Hover_MexendoComFormas</a>    

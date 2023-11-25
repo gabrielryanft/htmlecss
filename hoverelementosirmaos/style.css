@@ -10,13 +10,14 @@ body{
 }
 
 header{
+    display: grid;
+    place-items: center;
     width: 100vw;
-    height: 100px;
+    min-height: 100px;
     background-color: rgb(100, 9, 9);
     border-bottom: 1px solid;
     color: whitesmoke;
     text-align: center;
-    line-height: 80px
 }
 
 main{
@@ -24,8 +25,8 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 550px;
+    max-width: 550px;
+    max-height: 550px;
     margin: auto
 }
 
