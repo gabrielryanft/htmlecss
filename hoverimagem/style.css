@@ -47,14 +47,14 @@ img{
     transition: scale 1000ms ease-in
 }
 
-div:hover:active #im1{
+div:active #im1{
     scale: 170%
 }
 
-div:hover:active #im2{
+div:active #im2{
     scale: 170%
 }
 
-div:hover:active #im3{
+div:active #im3{
     scale: 170%
-}:active
+}
