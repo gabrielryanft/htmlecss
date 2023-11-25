@@ -11,3 +11,5 @@ if (c_width < c_height){
     elemento.style.setProperty("--m_height", "10vh") 
     elemento.style.setProperty("--m_width", "10vh") 
 }
+
+//notei que eu poderia ter usado vmin no css
