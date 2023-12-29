@@ -8,6 +8,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: content-box;
     font-family: monospace;
 }
 
@@ -63,26 +64,6 @@ main{
     border-radius: 1rem;
     
     font-size: var(--tamanho_texto);
-}
-
-#nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 8rem;
-    position: absolute;
-    bottom: calc((50vh - 6rem) - 7.5rem);
-    right: 50%;
-    transform: translateX(50%);
-    left:auto;
-}
-
-#nav > a{
-    height: 8px;
-    width: 8px;
-    color: transparent;
-    border: 1px solid black;
-    border-radius: 2px
 }
 
 p{

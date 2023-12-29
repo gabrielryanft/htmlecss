@@ -4,57 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color:rgb(142, 125, 55);
-            display: flex;
-            height: 100vh;
-            width: 100vw;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            overflow-x: hidden;
-        }
-
-        main{
-            display: flex;
-            width: 80vw;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        img{
-            mix-blend-mode: color-burn;
-            max-height: 250px;
-            margin: 1rem
-        }
-
-        label{
-            color: white
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="color" id="color">
-    <label for="color">mecha em mim e veja oque acontece com as imagens.</label>
+<header>
+    <h1>Use o input de cor: </h1>
+    <div>
+        <label for="color">controlador de cor:</label>
+        <input type="color" id="cor">
+    </div>
+</header>
     <main>
-        <img src="totoso.jpg" alt="imagem do gabriel totosão">
-        <img src="sheldon.jpg" alt="imegem do sheldon da serie te big bang thiory jogando xadrez">
-        <img src="https://source.unsplash.com/random/?id=a" alt="">
-        <img src="https://source.unsplash.com/random/?id=b" alt="">
-        <img src="https://source.unsplash.com/random/?id=c" alt="">
+        <h1>Propriedade CSS Mix-blend-mode</h1>
+        <img src="imagens/youtube-logo.png" alt="Logo do Youtube">
+        <img src="imagens/nike-logo.jpg" alt="Logo na Nike">
+        <img src="imagens/totoso.jpg" alt="Imagem de um adolecente sentado em uma cadeira.">
+        <img src="https://source.unsplash.com/random/?id=gabrieltotosão" alt="Imagem aleatória do site Unsplash" title="Imagem aleatória do site Unsplash">
     </main>
-    <script>
-        setInterval(() => {
-            color = document.querySelector("#color").value
-            document.body.style.backgroundColor = color
-        }, 1);
-    </script>
+    <footer>
+        <p>Gabriel R. totosão</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

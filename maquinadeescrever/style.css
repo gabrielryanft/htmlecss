@@ -1,31 +1,78 @@
 @charset "UTF-8";
 
-body{
-    overflow: hidden;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --numero_caracteres: 19;
+    --numero_caracteres_ch: 19ch;
+    --tempo_digitacao: 3s;
+}
+
+main{
+    display: flex;
+    min-height: 15rem;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+label{
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+input[type=text]{
+    padding: .2rem;
+    font-family: monospace;
+    font-size: 1rem;
+    width: 21ch;
+    margin: .5rem;
+    border: 1px solid grey;
+    border-radius: .2rem
+}
+
+input[type=submit]{
+    width: 6rem;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1rem
 }
 
 a{
     text-decoration: none;
 }
 
-main{
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
-
 p{
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: 20px;
-    width: 18ch;
+    width: var(--numero_caracteres_ch);
     white-space: nowrap;
     overflow: hidden;
     font-weight: bold;
-    border-right:4px solid;
-    animation: digitando 3s steps(18) infinite alternate, piscando .6s infinite step-end alternate;
+    /* border-right:4px solid; */
+    box-shadow: 4px 0 0 0 black;
+    animation: digitando var(--tempo_digitacao) steps(var(--numero_caracteres)) infinite alternate, piscando .6s infinite step-end alternate;
 }
 
 @keyframes digitando{
@@ -36,6 +83,23 @@ p{
 
 @keyframes piscando {
     50% {
-        border-color: transparent
+        box-shadow: 4px 0 0 0 transparent
     }
+}
+
+footer{
+    display: grid;
+    place-items: center;
+}
+
+footer > p{
+    margin: 1rem;
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: .9rem;
+    width: 18ch;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: lighter;
+    animation: digitando 6s steps(18) alternate, piscando .6s infinite step-end alternate;
 }
