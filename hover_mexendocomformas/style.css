@@ -47,12 +47,29 @@ div{
 }
 
 footer{
-    padding: .7rem;
+    min-height: 3rem;
+    /* overflow: hidden; */
+    display: grid;
+    place-items: center;
     background-color:  rgb(103, 151, 167);
     border-top: 2px solid rgb(255, 255, 255);
     font-size: 1.1rem;
     margin-top: 1rem;
-    text-align: center;
+    overflow: hidden;
+}
+
+footer p{
+    animation: girar 1s linear infinite paused;
+}
+
+footer:hover p{
+    animation-play-state: running;
+}
+
+@keyframes girar {
+    to{
+        transform: rotate(1turn);
+    }
 }
 
 /* interação */

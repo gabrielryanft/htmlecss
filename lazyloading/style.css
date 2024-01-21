@@ -9,10 +9,83 @@ body{
 }
 
 header{
-    text-align: center;
-    padding: 30px;
+    display: grid;
+    place-items: center;
+    text-align: left;
     background-color: rgba(0, 128, 0, 0.326);
     box-shadow: inset 0px 0px 20px 0px rgba(0, 85, 0, 0.75);
+}
+
+abbr{
+    position: relative
+}
+
+abbr::after{
+    transition: all 80ms linear;
+    content: "hypertext markup language";
+    text-wrap: nowrap;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: clamp(0%, 50%, 100%)
+}
+
+abbr:hover::after{
+    border-radius: .4rem;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 63, 26);
+    padding: .5rem;
+    bottom: -2rem;
+
+}
+
+abbr::before{
+    transition: all 80ms linear;
+    content: " ";
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: calc(50% + 6px)
+}
+
+abbr:hover::before{
+    --tamanho: .8rem;
+    background-color: rgb(29, 63, 26);
+    transform: rotate(45deg);
+    border-radius: .4rem 0 0 0;
+    height: var(--tamanho);
+    width: var(--tamanho);
+    bottom: calc(var(--tamanho)/2*-1 - 1px);
+}
+
+h1{
+    text-align: center;
+    text-wrap: balance;
+    margin: 2rem;
+}
+
+h2{
+   word-wrap: break-word;
+}
+
+header p{
+    width: clamp(45ch, 50%, 75ch);
+    text-indent: 2rem;
+    margin: 1rem
+}
+
+@media (max-width: 60ch) {
+    header p{
+        width: clamp(25ch, 50%, 75ch);
+        text-indent: 2rem;
+        margin: 1rem
+    }
 }
 
 main{
@@ -23,10 +96,12 @@ main{
     opacity: 1;
 }
 
-p{
+main p{
+    width: clamp(20ch, 50%, 35ch);
     font-weight: 500;
     text-align: left;
-    text-indent: 20px;
+    text-indent: 2rem;
+    margin: 1rem auto
 }
 
 img{
@@ -37,9 +112,88 @@ img{
     border: 8px double rgba(0, 33, 0, 0.838);
 }
 
+
+#img1{
+    position: relative
+}
+
+#img1::after{
+    transition: all 80ms linear;
+    content: "Parece um psicopata";
+    text-wrap: nowrap;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#img1:hover::after{
+    border-radius: .4rem;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 63, 26);
+    padding: .5rem;
+
+}
+
+#img2{
+    position: relative
+}
+
+#img2::after{
+    transition: all 80ms linear;
+    content: "Nerd";
+    text-wrap: nowrap;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#img2:hover::after{
+    border-radius: .4rem;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 63, 26);
+    padding: .5rem;
+}
+
+#img3{
+    position: relative
+}
+
+#img3::after{
+    transition: all 80ms linear;
+    content: "Muito totoso";
+    text-wrap: nowrap;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#img3:hover::after{
+    border-radius: .4rem;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 63, 26);
+    padding: .5rem;
+}
+
 footer{
     opacity: 1;
-    padding: 30px;
+    display: grid;
+    place-items: center;
+    height: 3rem;
     color: transparent;
     text-shadow: 0px 0px 1px rgb(0, 58, 0);
 }

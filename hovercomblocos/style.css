@@ -1,33 +1,41 @@
 @charset "UTF-8";
 
+:root{
+    --height_header: 8rem;
+    --height_footer: 3rem; 
+    --height_main: calc(100vh - var(--height_header) - var(--height_footer)); 
+
+    --temp_animacao: .8s;
+}
+
 body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(10, 67, 137);
     text-align: center;
     font-variant: small-caps;
-    overflow-x: hidden;
 }
 
 header{
-    display: flex;
+    display: grid;
+    min-height: var(--height_header);
+    place-items: center;
     width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
 }
 
 h1{
     color: white;
-    margin: 200px 30px 100px 30px;
+    margin: 6rem 1rem;
     transform: skewY(20deg);
     text-shadow: 3px 3px 0px black;
+    font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
 main{
     display: flex;
-    width: 55vw;
+    width: 100%;
+    min-height: var(--height_main);
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
@@ -35,20 +43,25 @@ main{
     margin: auto;
 }
 
+div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
 ul{
-    margin: 30px 90px;
+    margin: 2rem 5rem 3rem 0;
 }
 
 li{
-    font-size: 20px;
-}
-
-p{
-    color: white;
-    font-weight: 900;
-    text-shadow: 1px 1px 0px black;
-    letter-spacing: 2px;
-    margin: 40px
+    font-size: 1.2rem;
 }
 
 /*caixas que vão para o lado*/
@@ -59,7 +72,7 @@ ul#to_side{
     --p_ts: 1
 }
 
-ul#to_side > li{
+ul#to_side li{
     position: relative;
     list-style: none;
     padding: 10px;
@@ -69,7 +82,7 @@ ul#to_side > li{
     transition: .5s;
 }
 
-ul#to_side > li::before{
+ul#to_side li::before{
     content:"";
     position:absolute;
     top: -26px;
@@ -83,7 +96,7 @@ ul#to_side > li::before{
     transform-origin: top;
 }
 
-ul#to_side > li::after{
+ul#to_side li::after{
     content:"";
     position: absolute;
     width: 100%;
@@ -97,7 +110,7 @@ ul#to_side > li::after{
     transform-origin: right;
 }
 
-ul#to_side > li:hover{
+ul#to_side li:hover{
     transform: translateX(-30px);
 }
 
@@ -109,7 +122,7 @@ ul#to_front{
     --p_tf: 1
 }
 
-ul#to_front > li{
+ul#to_front li{
     position: relative;
     list-style: none;
     padding: 10px;
@@ -119,7 +132,7 @@ ul#to_front > li{
     transition: .5s;
 }
 
-ul#to_front > li::before{
+ul#to_front li::before{
     content:"";
     position:absolute;
     top: -26px;
@@ -133,7 +146,7 @@ ul#to_front > li::before{
     transform-origin: top;
 }
 
-ul#to_front > li::after{
+ul#to_front li::after{
     content:"";
     position: absolute;
     width: 100%;
@@ -147,6 +160,64 @@ ul#to_front > li::after{
     transform-origin: right;
 }
 
-ul#to_front > li:hover{
+ul#to_front li:hover{
     transform: translate(-30px, 25px);
+}
+
+/* footer */
+
+footer{
+    display: grid;
+    min-height: var(--height_footer);
+    width: 100%;
+    place-items: center;
+}
+
+p{
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 0px black;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+span{
+    display: inline-block;
+    animation: onda var(--temp_animacao) linear infinite paused
+}
+
+footer:hover span{
+    animation-play-state: running;
+}
+
+footer p span:nth-child(1){animation-delay: calc(1 / 15*var(--temp_animacao))}
+footer p span:nth-child(2){animation-delay: calc(2 / 15*var(--temp_animacao))}
+footer p span:nth-child(3){animation-delay: calc(3 / 15*var(--temp_animacao))}
+footer p span:nth-child(4){animation-delay: calc(4 / 15*var(--temp_animacao))}
+footer p span:nth-child(5){animation-delay: calc(5 / 15*var(--temp_animacao))}
+footer p span:nth-child(6){animation-delay: calc(6 / 15*var(--temp_animacao))}
+footer p span:nth-child(7){animation-delay: calc(7 / 15*var(--temp_animacao))}
+footer p span:nth-child(8){animation-delay: calc(8 / 15*var(--temp_animacao))}
+footer p span:nth-child(9){animation-delay: calc(9 / 15*var(--temp_animacao))}
+footer p span:nth-child(10){animation-delay: calc(10 / 15*var(--temp_animacao))}
+footer p span:nth-child(11){animation-delay: calc(11 / 15*var(--temp_animacao))}
+footer p span:nth-child(12){animation-delay: calc(12 / 15*var(--temp_animacao))}
+footer p span:nth-child(13){animation-delay: calc(13 / 15*var(--temp_animacao))}
+footer p span:nth-child(14){animation-delay: calc(14 / 15*var(--temp_animacao))}
+footer p span:nth-child(15){animation-delay: calc(15 / 15*var(--temp_animacao))}
+
+
+@keyframes onda {
+    30%{
+        transform: translateY(.3rem);
+    }
+    70%{
+        transform: translateY(-.3rem)
+    }
+}
+
+@media (max-width: 300px) {
+    div > div{
+        flex-wrap: wrap;
+    }
 }

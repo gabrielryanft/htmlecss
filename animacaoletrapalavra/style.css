@@ -12,12 +12,7 @@ body{
     justify-content: center;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-}
-
-div{
+span{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10vw;
     margin: 10px;

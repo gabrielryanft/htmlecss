@@ -2,7 +2,8 @@
 
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -15,11 +16,10 @@
 /*header*/
 
 header{
-    height: var(--header_height);
+    min-height: var(--header_height);
     width: var(--width_principais);
     display: grid;
-    place-items: middle;
-    text-align: center;
+    place-items: center;
 }
 
 header h1{
@@ -33,32 +33,39 @@ header h1{
     background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
     -webkit-background-clip: text;/*mesma coisa*/
     background-clip: text;/*mesma coisa*/
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /*main*/
 
 main{
-    display: flex;
+    display: grid;
+    place-items: center;
     
     min-height: var(--main_height);
     width: var(--width_principais);
 
-    align-items: center;
     text-align: center;
+    text-wrap: balance;/*para que o texto fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em cima e 3 em baixo */
+
 }
 
-main div{
-    text-wrap: balance; /*para que o text wrap fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em coma e 3 em baixo*/
+main > div{
+    width: 80vw
+}
 
+main p{
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    display: inline;
 
     /*gradiente da div*/
-    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+    background-image: linear-gradient(90deg, #006100, #002376, #870000); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     -webkit-background-clip: text;/*mesma coisa*/
     background-clip: text;/*mesma coisa*/
-    -webkit-text-fill-color: transparent;
+    color: rgba(0, 0, 0, 0);
 }
 
 /*footer*/
@@ -67,8 +74,8 @@ footer{
     height: var(--footer_height);
     width: var(--width_principais);
 
-    text-align: center;
-    line-height: var(--footer_height);
+    display: grid;
+    place-items: center
 }
 
 footer p{
@@ -77,17 +84,19 @@ footer p{
     text-wrap: balance;
     transition: all 400ms linear;
     font-weight: bold;
-    display: inline-block;
 
     background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
     -webkit-background-clip: text;/*mesma coisa*/
     background-clip: text;/*mesma coisa*/
-    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-size: 200%;
+    background-position: left
+
 }
 
 footer:hover p{
-    letter-spacing: 1rem;
-    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
+    background-position: right
 }
 
 /*span's*/
@@ -95,28 +104,4 @@ footer:hover p{
 span{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-}
-
-h1, div, p{
-    margin: auto 40px
-}
-
-@media (min-width: 1500px) {
-    h1, div, p{
-        margin: auto 100px
-    }
-}
-
-@media (max-width: 600px) {
-    :root{
-        --header_height: calc(6rem * 0.7);
-        --footer_height: calc(4rem * 0.7);
-        --main_height: calc(100vh - var(--header_height) - var(--footer_height));
-        --width_principais: 100%; /*width do header main e footer*/
-    }
-
-    h1, div, p{
-        margin: auto 20px;
-        transform: scale(.7);
-    }
 }
