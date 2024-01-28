@@ -10,7 +10,8 @@ body{
     width: 100vw;
     overflow: hidden;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
 main{
     position: absolute;
@@ -29,7 +30,11 @@ main{
     overflow: hidden;
 }
 body::after{
-    content: "Sumiu!";
+    content: "Gabriel R. totosão";
+    display: block;
+    width: 5rem;
+    text-wrap: wrap;
+    word-wrap: normal;
     position: relative;
 }
 
