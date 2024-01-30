@@ -11,11 +11,15 @@
         <h1>Barra de progresso nativa do HTML</h1>
     </header>
     <main>
-        <p>Carregando...</p>
-        <progress id="barra_progresso" value="28" max="100"> 28% </progress>
+        <label for="filething">Escolha ou largue um arquivo:</label>
+        <input type="file" name="filething" id="filething" multiple>
+        <div id="dropbox"></div>
+        <progress id="barra_progresso" value="0" max="100"></progress>
+        <p id="progresso"></p>
     </main>
     <footer>
         <p>Gabriel R. totosão!</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
