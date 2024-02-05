@@ -17,6 +17,7 @@
 <a href="https://gabrielryanft.github.io/htmlecss/imageslider/imageslider.html" target="_blank" rel="next">ImageSlider</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/lazyloading/lazyloading.html" target="_blank" rel="next">lazyLoading</a>       
 <a href="https://gabrielryanft.github.io/htmlecss/linhanomenu/linhamenu.html" target="_blank" rel="next">LinhaNoMenu</a>       
+<a href="https://gabrielryanft.github.io/htmlecss/maquinadeescrever/maquinadescrever.html" target="_blank" rel="next">maquinadeescrever</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/modal/modal.html" target="_blank" rel="next">Modal</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/outline/outline.html" target="_blank" rel="next">Outline</a>    
 <a href="https://gabrielryanft.github.io/htmlecss/progress_nativohtml/progress_nativohtml.html" target="_blank" rel="next">Progress_NativoHTML</a>    
