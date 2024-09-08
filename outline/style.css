@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --tamanho_header: 5rem;
+    --padding_header: 2rem;
+
+    --tamanho_h1: 2rem;
+
+    --height_botoes: 4rem;
+    --width_botoes: 7rem;
+    --botoes_por_fileira_e_coluna: 2;
+    --margin_botoes: 1.5rem;
+
+    --height_footer: 4rem
+}
+
+/*Header*/ 
+
+header{
+    min-height: var(--tamanho_header);
+    width: 100%;
+    text-align: center;
+    padding: var(--padding_header)
+}
+
+header > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--tamanho_h1);
+
+}
+
+/*Main*/
+
+main{
+    display: flex;
+    min-height: calc((100vh - var(--tamanho_header)) - (var(--padding_header) * 2) - var(--height_footer) );
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    min-height: calc( (var(--height_botoes) * var(--botoes_por_fileira_e_coluna)) + (var(--margin_botoes) * 4) );
+    max-width: calc( (var(--width_botoes) * var(--botoes_por_fileira_e_coluna)) + (var(--margin_botoes) * 4) );
+
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section > div{
+    height: var(--height_botoes);
+    width: var(--width_botoes);
+    background-color: rgb(0, 115, 255);
+    margin: var(--margin_botoes);
+
+    text-align: center;;
+    line-height: var(--height_botoes);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section div:nth-child(1){
+    outline: 3px solid rgb(0, 35, 60);
+    outline-offset: -1rem;
+}
+
+section div:nth-child(2){
+    outline: 3px solid rgb(0, 35, 60);
+    outline-offset: 1rem;
+}
+
+section div:nth-child(3){
+    outline: 3px solid transparent;
+    outline-offset: calc((var(--height_botoes) / 2) * -1);
+
+    transition: all linear 300ms;
+}
+
+section div:nth-child(3):hover{
+    outline: 3px solid rgb(0, 35, 60);
+    outline-offset: .5rem;
+}
+
+section div:nth-child(4){
+    outline: 3px solid rgb(156, 107, 0);
+    outline-offset: .5rem;
+    box-shadow: 0 0 0 .5rem rgb(68, 46, 0),
+                inset 0 0 .3rem rgb(61, 49, 26);
+    background-color: wheat;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: var(--height_footer);
+    text-align: center;
+}
+
+footer > p{
+    line-height: var(--height_footer);
+    font-size: 1rem
+}
+
+footer > p > span{
+    font-size: 0rem;
+    transition: all 300ms linear;
+}
+
+footer:hover > p > span{
+    font-size: 1rem
+}

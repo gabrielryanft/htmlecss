@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+:root{
+    --main_height: calc(100vh - var(--footer_height));
+    --footer_height: 4rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    outline: 2px solid rgba(0, 119, 230, 0);
+    border-radius: 10px;
+    outline-offset: 0;
+    transition: all 200ms linear;
+}
+
+*:focus-visible{
+    outline: 3px solid rgb(0, 120, 230);
+    border-radius: 10px;
+    outline-offset: .2rem
+}
+
+main{
+    display: grid;
+    min-height: var(--main_height);
+    width: 100%;
+    place-items: center;
+    place-items: center;
+}
+
+summary{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+    margin: .5rem;
+    padding: .5rem
+}
+
+a{
+    display: block;
+    padding: 5px;
+    color: black;
+    padding: 5px;
+    margin: 0 1.5rem .5rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black
+}
+
+
+#inst{
+    background-image: linear-gradient(220deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: whitesmoke 
+}
+
+#yout{
+    background-color: #c00;
+    color: whitesmoke
+}
+
+#tikt{
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    text-shadow: -1px -1px 0px #20d4ecdc;
+    text-shadow: 1px 1px 0px #ff4a3ac1
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    height: var(--footer_height);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer p{
+    position: relative;
+    font-size: 1rem;
+    transform: translateY(-100%);
+}
+
+footer p::before{
+    transform-origin: 50% 25%;
+    transition: all 200ms linear;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    --tamanho_quadrado: 1rem;
+    height:var(--tamanho_quadrado);
+    width: var(--tamanho_quadrado);
+    bottom: -1px;
+    left: calc(var(--tamanho_quadrado) * -1);
+    background-image: conic-gradient(black 0% 10%, rgba(0, 0, 0, 0) 10% 90%, black 90% 100%);
+    transform: rotate(-.25turn);
+}
+
+footer p span{
+    transition: all 200ms linear;
+    --tamanho_fonte: .99rem;
+    opacity: 0;
+    font-size: var(--tamanho_fonte);
+    position: absolute;
+    bottom: 0;
+    right: .5rem
+}
+
+footer:hover span{
+    opacity: 1;
+    bottom: calc(var(--tamanho_fonte) * -1);
+}
+
+footer:hover p::before{
+    transform: rotate(0turn);
+}
