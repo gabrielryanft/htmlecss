@@ -1,6 +1,5 @@
 alerthtml
 animacaoletrapalavra
-exists.txt
 galeriadefotos
 gradiente_textwrap
 hovercomblocos

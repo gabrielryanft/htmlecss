@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm exists.txt
-ls | grep -v -e "README.md" -e "LICENSE" -e "organize_htmlecss.sh" > exists.txt
+ls | grep -v -e "README.md" -e "LICENSE" -e "organize_htmlecss.sh" -e "exists.txt" > exists.txt
 printf "# HTMLeCSS\n" > README.md
 while read name
 do

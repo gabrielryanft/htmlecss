@@ -1,7 +1,6 @@
 # HTMLeCSS
 <a href='https://gabrielryanft.github.io/htmlecss/alerthtml/index.html' target='_blank' rel='next'>alerthtml</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/animacaoletrapalavra/index.html' target='_blank' rel='next'>animacaoletrapalavra</a><br/>
-<a href='https://gabrielryanft.github.io/htmlecss/exists.txt/index.html' target='_blank' rel='next'>exists.txt</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/galeriadefotos/index.html' target='_blank' rel='next'>galeriadefotos</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/gradiente_textwrap/index.html' target='_blank' rel='next'>gradiente_textwrap</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/hovercomblocos/index.html' target='_blank' rel='next'>hovercomblocos</a><br/>
