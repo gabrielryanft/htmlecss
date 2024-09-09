@@ -1,6 +1,18 @@
-#!/bin/bash
-
-while read name
-do
-
-done < exists.txt
+alerthtml
+animacaoletrapalavra
+exists.txt
+galeriadefotos
+gradiente_textwrap
+hovercomblocos
+hoverelementosirmaos
+hover_mexendocomformas
+imageslider
+lazyloading
+linhanomenu
+maquinadeescrever
+modal
+outline
+progress_nativohtml
+resizebox
+retractablemenu
+tirandofundobranco

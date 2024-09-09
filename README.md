@@ -1,6 +1,19 @@
 # HTMLeCSS
-<a href=https://gabrielryanft.github.io/htmlecss/#!/bin/bash/index.html target=_blank rel=next>#!/bin/bash</a>
-<a href=https://gabrielryanft.github.io/htmlecss//index.html target=_blank rel=next></a>
-<a href=https://gabrielryanft.github.io/htmlecss/while<a href=https://gabrielryanft.github.io/htmlecss/do/index.html target=_blank rel=next>do</a>
-<a href=https://gabrielryanft.github.io/htmlecss//index.html target=_blank rel=next></a>
-<a href=https://gabrielryanft.github.io/htmlecss/done
+<a href='https://gabrielryanft.github.io/htmlecss/alerthtml/index.html' target='_blank' rel='next'>alerthtml</a>
+<a href='https://gabrielryanft.github.io/htmlecss/animacaoletrapalavra/index.html' target='_blank' rel='next'>animacaoletrapalavra</a>
+<a href='https://gabrielryanft.github.io/htmlecss/exists.txt/index.html' target='_blank' rel='next'>exists.txt</a>
+<a href='https://gabrielryanft.github.io/htmlecss/galeriadefotos/index.html' target='_blank' rel='next'>galeriadefotos</a>
+<a href='https://gabrielryanft.github.io/htmlecss/gradiente_textwrap/index.html' target='_blank' rel='next'>gradiente_textwrap</a>
+<a href='https://gabrielryanft.github.io/htmlecss/hovercomblocos/index.html' target='_blank' rel='next'>hovercomblocos</a>
+<a href='https://gabrielryanft.github.io/htmlecss/hoverelementosirmaos/index.html' target='_blank' rel='next'>hoverelementosirmaos</a>
+<a href='https://gabrielryanft.github.io/htmlecss/hover_mexendocomformas/index.html' target='_blank' rel='next'>hover_mexendocomformas</a>
+<a href='https://gabrielryanft.github.io/htmlecss/imageslider/index.html' target='_blank' rel='next'>imageslider</a>
+<a href='https://gabrielryanft.github.io/htmlecss/lazyloading/index.html' target='_blank' rel='next'>lazyloading</a>
+<a href='https://gabrielryanft.github.io/htmlecss/linhanomenu/index.html' target='_blank' rel='next'>linhanomenu</a>
+<a href='https://gabrielryanft.github.io/htmlecss/maquinadeescrever/index.html' target='_blank' rel='next'>maquinadeescrever</a>
+<a href='https://gabrielryanft.github.io/htmlecss/modal/index.html' target='_blank' rel='next'>modal</a>
+<a href='https://gabrielryanft.github.io/htmlecss/outline/index.html' target='_blank' rel='next'>outline</a>
+<a href='https://gabrielryanft.github.io/htmlecss/progress_nativohtml/index.html' target='_blank' rel='next'>progress_nativohtml</a>
+<a href='https://gabrielryanft.github.io/htmlecss/resizebox/index.html' target='_blank' rel='next'>resizebox</a>
+<a href='https://gabrielryanft.github.io/htmlecss/retractablemenu/index.html' target='_blank' rel='next'>retractablemenu</a>
+<a href='https://gabrielryanft.github.io/htmlecss/tirandofundobranco/index.html' target='_blank' rel='next'>tirandofundobranco</a>
