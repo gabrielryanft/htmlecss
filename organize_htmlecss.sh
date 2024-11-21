@@ -1,9 +1,9 @@
 #!/bin/bash
 
 tmp_file=$(mktemp)
-ls | grep -v -e "README.md" -e "LICENSE" -e "organize_htmlecss.sh" > $tmp_file
+ls | grep -v -e "README.md" -e "LICENSE" -e "organize_htmlecss.sh" -e "index.html" > $tmp_file
 printf "# HTMLeCSS\n" > README.md
-printf "
+printf '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +14,7 @@ printf "
 <body>
 <h1>HTMLeCSS</h1>
 <p>A list of my tests with HTML and CSS</p>
-" > index.html
+' > index.html
 while read name
 do
 	printf "<a href='https://gabrielryanft.github.io/htmlecss/$name/index.html' target='_blank' rel='next'>$name</a><br/>\n" >> README.md
