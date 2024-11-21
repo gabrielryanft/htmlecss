@@ -13,7 +13,7 @@ printf "
 </head>
 <body>
 <h1>HTMLeCSS</h1>
-<p>A list of my tests in HTML and CSS</p>
+<p>A list of my tests with HTML and CSS</p>
 " > index.html
 while read name
 do
