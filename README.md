@@ -1,11 +1,8 @@
 # HTMLeCSS
 <a href='https://gabrielryanft.github.io/htmlecss/alerthtml/index.html' target='_blank' rel='next'>alerthtml</a><br/>
-<a href='https://gabrielryanft.github.io/htmlecss/animacao_podcast_escola/index.html' target='_blank' rel='next'>animacao_podcast_escola</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/galeriadefotos/index.html' target='_blank' rel='next'>galeriadefotos</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/gradiente_textwrap/index.html' target='_blank' rel='next'>gradiente_textwrap</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/hovercomblocos/index.html' target='_blank' rel='next'>hovercomblocos</a><br/>
-<a href='https://gabrielryanft.github.io/htmlecss/hoverelementosirmaos/index.html' target='_blank' rel='next'>hoverelementosirmaos</a><br/>
-<a href='https://gabrielryanft.github.io/htmlecss/hover_mexendocomformas/index.html' target='_blank' rel='next'>hover_mexendocomformas</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/imageslider/index.html' target='_blank' rel='next'>imageslider</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/lazyloading/index.html' target='_blank' rel='next'>lazyloading</a><br/>
 <a href='https://gabrielryanft.github.io/htmlecss/linhanomenu/index.html' target='_blank' rel='next'>linhanomenu</a><br/>
