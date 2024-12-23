@@ -105,5 +105,41 @@ footer{
     place-items: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+}
 
+
+footer p{
+    position: relative;
+}
+
+footer p span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    transition: all 200ms linear;
+}
+
+footer:hover span{
+    font-size: 1rem;
+    padding: 10px;
+    outline: 2px solid black;
+    background-color: rgb(29, 67, 192);
+}
+
+footer p span span{
+    display: block;
+    font-size: 0px;
+    transition: all 200ms linear;
+}
+
+footer:hover span > span{
+    height: 5px;
+    width: 10px;
+    transform: translate(-50%, 10px);
+    padding: 1px;
+    outline: 1px solid black;
+    background-color: rgb(159, 49, 45);
 }
