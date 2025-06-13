@@ -166,18 +166,24 @@ footer {
     place-items: center;
 }
 
-footer>p {
-    margin: 1rem;
-    font-family: monospace;
-    color: black;
-    font-size: .9rem;
-    width: 18ch;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: bolder;
-    animation: digitando 6s steps(19) alternate paused, piscando .6s infinite step-end alternate paused;
+footer p {
+    background-image: linear-gradient(90deg, black 0% 50%, white 50% 100%);
+    background-size: 200%;
+    background-position: right;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.0);
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    padding: 1px 0px;
+    position: relative;
+    transition: all .2s linear !important;
 }
 
-footer:hover>#gabtts {
-    animation: digitando 6s steps(19) alternate running, piscando .6s infinite step-end alternate running;
+footer:hover p,
+footer:hover p::after {
+    background-position: left;
+    transition: all 6s steps(18) !important;
+    ;
 }
