@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --height_header: 8rem;
-    --height_footer: 3rem; 
-    --height_main: calc(100vh - var(--height_header) - var(--height_footer)); 
+    --height_footer: 3rem;
+    --height_main: calc(100vh - var(--height_header) - var(--height_footer));
 
     --temp_animacao: .8s;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(10, 67, 137);
@@ -16,14 +16,14 @@ body{
     font-variant: small-caps;
 }
 
-header{
+header {
     display: grid;
     min-height: var(--height_header);
     place-items: center;
     width: 100%;
 }
 
-h1{
+h1 {
     color: white;
     margin: 6rem 1rem;
     transform: skewY(20deg);
@@ -32,7 +32,7 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
-main{
+main {
     display: flex;
     width: 100%;
     min-height: var(--height_main);
@@ -43,36 +43,36 @@ main{
     margin: auto;
 }
 
-div{
+div {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-div > div{
+div>div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
 
-ul{
+ul {
     margin: 2rem 5rem 3rem 0;
 }
 
-li{
+li {
     font-size: 1.2rem;
 }
 
 /*caixas que vão para o lado*/
 
-ul#to_side{
+ul#to_side {
     position: relative;
     transform: skewY(20deg);
     --p_ts: 1
 }
 
-ul#to_side li{
+ul#to_side li {
     position: relative;
     list-style: none;
     padding: 10px;
@@ -82,9 +82,9 @@ ul#to_side li{
     transition: .5s;
 }
 
-ul#to_side li::before{
-    content:"";
-    position:absolute;
+ul#to_side li::before {
+    content: "";
+    position: absolute;
     top: -26px;
     right: -61px;
     width: 60px;
@@ -96,8 +96,8 @@ ul#to_side li::before{
     transform-origin: top;
 }
 
-ul#to_side li::after{
-    content:"";
+ul#to_side li::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 50px;
@@ -110,19 +110,19 @@ ul#to_side li::after{
     transform-origin: right;
 }
 
-ul#to_side li:hover{
+ul#to_side li:hover {
     transform: translateX(-30px);
 }
 
 /*caixas que vão para a frente*/
 
-ul#to_front{
+ul#to_front {
     position: relative;
     transform: skewY(20deg);
     --p_tf: 1
 }
 
-ul#to_front li{
+ul#to_front li {
     position: relative;
     list-style: none;
     padding: 10px;
@@ -132,9 +132,9 @@ ul#to_front li{
     transition: .5s;
 }
 
-ul#to_front li::before{
-    content:"";
-    position:absolute;
+ul#to_front li::before {
+    content: "";
+    position: absolute;
     top: -26px;
     right: -61px;
     width: 60px;
@@ -146,8 +146,8 @@ ul#to_front li::before{
     transform-origin: top;
 }
 
-ul#to_front li::after{
-    content:"";
+ul#to_front li::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 50px;
@@ -160,20 +160,20 @@ ul#to_front li::after{
     transform-origin: right;
 }
 
-ul#to_front li:hover{
+ul#to_front li:hover {
     transform: translate(-30px, 25px);
 }
 
 /* footer */
 
-footer{
+footer {
     display: grid;
     min-height: var(--height_footer);
     width: 100%;
     place-items: center;
 }
 
-p{
+p {
     color: white;
     font-weight: 900;
     text-shadow: 1px 1px 0px black;
@@ -181,43 +181,89 @@ p{
     font-size: 1rem;
 }
 
-span{
+span {
     display: inline-block;
     animation: onda var(--temp_animacao) linear infinite paused
 }
 
-footer:hover span{
+footer:hover span {
     animation-play-state: running;
 }
 
-footer p span:nth-child(1){animation-delay: calc(1 / 15*var(--temp_animacao))}
-footer p span:nth-child(2){animation-delay: calc(2 / 15*var(--temp_animacao))}
-footer p span:nth-child(3){animation-delay: calc(3 / 15*var(--temp_animacao))}
-footer p span:nth-child(4){animation-delay: calc(4 / 15*var(--temp_animacao))}
-footer p span:nth-child(5){animation-delay: calc(5 / 15*var(--temp_animacao))}
-footer p span:nth-child(6){animation-delay: calc(6 / 15*var(--temp_animacao))}
-footer p span:nth-child(7){animation-delay: calc(7 / 15*var(--temp_animacao))}
-footer p span:nth-child(8){animation-delay: calc(8 / 15*var(--temp_animacao))}
-footer p span:nth-child(9){animation-delay: calc(9 / 15*var(--temp_animacao))}
-footer p span:nth-child(10){animation-delay: calc(10 / 15*var(--temp_animacao))}
-footer p span:nth-child(11){animation-delay: calc(11 / 15*var(--temp_animacao))}
-footer p span:nth-child(12){animation-delay: calc(12 / 15*var(--temp_animacao))}
-footer p span:nth-child(13){animation-delay: calc(13 / 15*var(--temp_animacao))}
-footer p span:nth-child(14){animation-delay: calc(14 / 15*var(--temp_animacao))}
-footer p span:nth-child(15){animation-delay: calc(15 / 15*var(--temp_animacao))}
+footer p span:nth-child(1) {
+    animation-delay: calc(1 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(2) {
+    animation-delay: calc(2 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(3) {
+    animation-delay: calc(3 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(4) {
+    animation-delay: calc(4 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(5) {
+    animation-delay: calc(5 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(6) {
+    animation-delay: calc(6 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(7) {
+    animation-delay: calc(7 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(8) {
+    animation-delay: calc(8 / 15*var(--temp_animacao));
+    width: 1ch
+}
+
+footer p span:nth-child(9) {
+    animation-delay: calc(9 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(10) {
+    animation-delay: calc(10 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(11) {
+    animation-delay: calc(11 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(12) {
+    animation-delay: calc(12 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(13) {
+    animation-delay: calc(13 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(14) {
+    animation-delay: calc(14 / 15*var(--temp_animacao))
+}
+
+footer p span:nth-child(15) {
+    animation-delay: calc(15 / 15*var(--temp_animacao))
+}
 
 
 @keyframes onda {
-    30%{
+    30% {
         transform: translateY(.3rem);
     }
-    70%{
+
+    70% {
         transform: translateY(-.3rem)
     }
 }
 
 @media (max-width: 300px) {
-    div > div{
+    div>div {
         flex-wrap: wrap;
     }
 }
