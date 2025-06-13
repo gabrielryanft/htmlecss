@@ -25,8 +25,7 @@ header {
 
 h1 {
     color: white;
-    margin: 6rem 1rem;
-    transform: skewY(20deg);
+    margin: 1rem 1rem;
     text-shadow: 3px 3px 0px black;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
