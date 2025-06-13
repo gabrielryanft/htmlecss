@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1,
+p {
+	text-align: center;
+	margin: 20px
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	width: 20%;
+	height: 50vh;
+	outline: solid 1px black;
+}
+
+.image {
+	margin-top: 5%;
+	outline: solid 1px black;
+	height: 80%;
+	width: 90%;
+
+	overflow: hidden;
+}
+
+img {
+	aspect-ratio: auto;
+	min-width: 0;
+	object-fit: cover;
+	/* object-fit: contain; */
+	height: 100%;
+	width: 100%;
+}
+
+/* .card:nth-child(where they are) { */
+/* 	order: the more negative the number, the first it will be. */
+/* } */
+
+.card:nth-child(4) {
+	order: -2
+}
+
+.card:nth-child(5) {
+	order: -1
+}
+
+.card:nth-child(7) {
+	order: -1
+}
+
+.card:nth-child(8) {
+	order: -1
+}
+
+.card:nth-child(9) {
+	order: -1
+}
+
+.card:nth-child(10) {
+	order: -1
+}
+
+.card:nth-last-child(2) {
+	order: -1
+}
