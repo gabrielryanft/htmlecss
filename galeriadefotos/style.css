@@ -2,20 +2,30 @@
 
 * {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-main {
+body {
     display: flex;
     height: 100vh;
     width: 100%;
     background-color: black;
 }
 
-img {
-    aspect-ratio: auto;
+a {
+    /* this mf had a little mf of a space at the bottom of the page, and i couldn't figure out why, it whas because it i forgot to pit the display flex in it. the weird thing is thet it was working fine. */
+    display: flex;
+
+    height: 100%;
+    aspect-ratio: 9/16;
     min-width: 0;
-    flex: 1 1 10px;
+    flex: 1 1 0px;
+    transition: .5s
+}
+
+img {
+    flex: 1 1 0px;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -23,15 +33,6 @@ img {
     transition: .5s;
     z-index: 0
 }
-
-a {
-    height: 100vh;
-    aspect-ratio: 9/16;
-    min-width: 0;
-    flex: 1 1 10px;
-    transition: .5s
-}
-
 
 img:hover,
 a:hover {
