@@ -1,76 +1,85 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --header_height: 6rem;
     --footer_height: 4rem;
     --main_height: calc(100vh - var(--header_height) - var(--footer_height));
-    --width_principais: 100%; /*width do header main e footer*/
+    --width_principais: 100%;
+    /*width do header main e footer*/
 }
 
 /*header*/
 
-header{
+header {
     min-height: var(--header_height);
     width: var(--width_principais);
     display: grid;
     place-items: center;
+    text-align: center;
 }
 
-header h1{
-    text-wrap: balance; /*para que o text wrap fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em coma e 3 em baixo*/
+header h1 {
+    text-wrap: balance;
+    /*para que o text wrap fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em coma e 3 em baixo*/
 
     font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     /*gradiente do h1*/
-    display: inline-block; /*para o gradiente ficar no lugar certo*/
-    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
-    -webkit-background-clip: text;/*mesma coisa*/
-    background-clip: text;/*mesma coisa*/
+    display: inline-block;
+    /*para o gradiente ficar no lugar certo*/
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0));
+    -webkit-background-clip: text;
+    /*mesma coisa*/
+    background-clip: text;
+    /*mesma coisa*/
     color: transparent;
 }
 
 /*main*/
 
-main{
+main {
     display: grid;
     place-items: center;
-    
+
     min-height: var(--main_height);
     width: var(--width_principais);
 
     text-align: center;
-    text-wrap: balance;/*para que o texto fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em cima e 3 em baixo */
+    text-wrap: balance;
+    /*para que o texto fique balanceado, não fique com 5 palavras em cima e 1 em baixo, mas em vez disso, fique com 3 em cima e 3 em baixo */
 
 }
 
-main > div{
+main>div {
     width: 80vw
 }
 
-main p{
+main p {
     font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline;
 
     /*gradiente da div*/
-    background-image: linear-gradient(90deg, #006100, #002376, #870000); 
+    background-image: linear-gradient(90deg, #006100, #002376, #870000);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    -webkit-background-clip: text;/*mesma coisa*/
-    background-clip: text;/*mesma coisa*/
+    -webkit-background-clip: text;
+    /*mesma coisa*/
+    background-clip: text;
+    /*mesma coisa*/
     color: rgba(0, 0, 0, 0);
 }
 
 /*footer*/
 
-footer{
+footer {
     height: var(--footer_height);
     width: var(--width_principais);
 
@@ -78,30 +87,31 @@ footer{
     place-items: center
 }
 
-footer p{
+footer p {
     font-size: 1.1rem;
     letter-spacing: .1rem;
     text-wrap: balance;
     transition: all 400ms linear;
     font-weight: bold;
 
-    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0)); 
-    -webkit-background-clip: text;/*mesma coisa*/
-    background-clip: text;/*mesma coisa*/
+    background-image: linear-gradient(90deg, rgb(0, 97, 0), rgb(0, 35, 118), rgb(135, 0, 0));
+    -webkit-background-clip: text;
+    /*mesma coisa*/
+    background-clip: text;
+    /*mesma coisa*/
     background-repeat: no-repeat;
     color: transparent;
     background-size: 200%;
     background-position: left
-
 }
 
-footer:hover p{
+footer:hover p {
     background-position: right
 }
 
 /*span's*/
 
-span{
+span {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
