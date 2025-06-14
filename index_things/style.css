@@ -51,6 +51,43 @@ img {
 	width: 100%;
 }
 
+footer {
+	font-family: monospace;
+	font-size: 1rem;
+	margin-top: 1rem;
+	display: grid;
+	place-items: center;
+}
+
+
+footer .hide {
+	background-image: linear-gradient(90deg, black 0% 50%, white 50% 100%);
+	background-size: 200%;
+	background-position: right;
+	background-clip: text;
+	color: rgba(0, 0, 0, 0.0);
+	font-size: 1rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	letter-spacing: .08rem;
+	padding: 1px 0px;
+	position: relative;
+}
+
+.hide:nth-child(1) {
+	transition: all .2s .1s linear !important;
+}
+
+footer:hover .hide:nth-child(1) {
+	background-position: left;
+	transition: all 1s steps(3) !important;
+}
+
+footer:hover .hide:nth-child(2) {
+	background-position: left;
+	transition: all 1s 1s steps(4) !important;
+}
+
 /* .card:nth-child(where they are) { */
 /* 	order: the more negative the number, the first it will be. */
 /* } */

@@ -185,5 +185,4 @@ footer:hover p,
 footer:hover p::after {
     background-position: left;
     transition: all 6s steps(18) !important;
-    ;
 }
