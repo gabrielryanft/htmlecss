@@ -30,7 +30,17 @@ main {
 	outline: solid 1px black;
 
 	min-width: 20rem;
-	max-width: 25vw
+	max-width: 25vw;
+	transition: all .1s linear;
+}
+
+.card:hover {
+	box-shadow: 0 0 10px -1px gray;
+}
+
+.card:active {
+	transition: all 0s linear;
+	box-shadow: none;
 }
 
 .image {
@@ -100,10 +110,6 @@ footer:hover .hide:nth-child(2) {
 	order: -1
 }
 
-.card:nth-child(7) {
-	order: -1
-}
-
 .card:nth-child(8) {
 	order: -1
 }
@@ -117,5 +123,9 @@ footer:hover .hide:nth-child(2) {
 }
 
 .card:nth-last-child(2) {
+	order: -1
+}
+
+.card:nth-last-child(4) {
 	order: -1
 }
