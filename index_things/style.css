@@ -106,26 +106,14 @@ footer:hover .hide:nth-child(2) {
 	order: -2
 }
 
-.card:nth-child(5) {
-	order: -1
-}
-
-.card:nth-child(8) {
-	order: -1
-}
-
-.card:nth-child(9) {
-	order: -1
-}
-
+.card:nth-child(5),
+.card:nth-child(8),
+.card:nth-child(9),
 .card:nth-child(10) {
 	order: -1
 }
 
-.card:nth-last-child(2) {
-	order: -1
-}
-
+.card:nth-last-child(2),
 .card:nth-last-child(4) {
 	order: -1
 }
