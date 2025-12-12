@@ -12,8 +12,10 @@ printf '<!DOCTYPE html>
     <link rel="stylesheet" href="./index_things/style.css">
 </head>
 <body>
+<header>
 <h1>HTMLeCSS</h1>
 <p>A list of my tests with HTML and CSS</p>
+</header>
 
 <main>
 ' > index.html
