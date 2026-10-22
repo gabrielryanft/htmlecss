@@ -21,9 +21,9 @@ printf '<!DOCTYPE html>
 ' > index.html
 while read name
 do
-	printf "<a href='./$name/index.html' target='_blank' rel='next'>$name</a><br/>\n" >> README.md
+	printf "<a href='https://gabrielryanft.github.io/htmlecss/$name/index.html' target='_blank' rel='next'>$name</a><br/>\n" >> README.md
 	printf "
-<a href='https://gabrielryanft.github.io/htmlecss/$name/index.html' target='_blank' rel='next' class='card'>
+<a href='./$name/index.html' target='_blank' rel='next' class='card'>
     <div class='image'>
 	<img src='./index_things/images/${name}.png' alt='Image of website'>
     </div>
